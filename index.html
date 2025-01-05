@@ -1,145 +1,239 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adarsh Mukesh">
+    <meta name="description" content="Adarsh Mukesh's personal academic webpage">
+    <title>Shubham Sinha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: OldLace;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .profile-picture {
+            text-align: center;
+            margin: 20px;
+        }
+        .profile-picture img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px;
+        }
+        .title {
+            color: #990000;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .details {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #990000;
+            border-bottom: 1px solid #990000;
+            padding-bottom: 5px;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        a {
+            color: #0066cc;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .content p:first-of-type {
+            margin-top: 0;
+        }
 
-<h1 style="text-align:center;"> Adarsh Mukesh </h1>
-<h2 style="text-align:center;"> PMRF Fellow since August 2018, IIT Kharagpur </h2>
+        /* Tabs styles */
+        .tab {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        .tab button {
+            background-color: inherit;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .tabcontent {
+            display: none;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
 
-  <style>
-  .center {
-  opacity: 1;
-  color: black;
-  margin: auto;
-  width: 70%;
-  font-family: sans-serif;
-  padding: 10px;
-  text-align : justify
-  }
-  </style>
-  
-<body style = "background-color: OldLace;">
-  <div style="text-align:center;">
-   Email: a.mukesh1055@gmail.com ; a.mukesh1055@iitkgp.ac.in <br>
-   Office: Information Processing Laboratory <br>
-  </div>
-  <img src="adarsh.jpg" align="right" width="124" height="165"> 
-  <a href = "https://drive.google.com/file/d/1-Wwale1ntqtDkHMyxEh-2dH3aQ9M2Pe_/view?usp=sharing" target="_blank"> CV
-  </a>
-  <p> <b> Academic background: </b>
-    <br>
-    <br>
-    I completed my bachelor's and master's from IIT Kharagpur in Biotechnology and Biochemical Engineering (B.Tech + M.Tech, Dual degree) in 2018 with my bachelor's and master's
-    <br>
-    project in Neuroscience, focusing on developing a computational model to demonstrate deviant selectivity and tonotopy column formation within mouse auditory cortex. Prior to this,
-    <br>
-    I also did an internship in the National Center for Biological Sciences (NCBS), Bangalore in a <a href= "https://www.ncbs.res.in/faculty/mini" target="_blank"> computational biology lab </a> where I studied protein docking and their mechainism.
-    <br>
-    Throughout my academic course, I maintained a position within the top 3 of my batch. My research interests broadly encompass the computational and theoretical aspects of stimulus 
-    <br>
-    selectivity within the brain and using the information-theoretic approach to study this. Since 2018, I have been carrying out my research in this field under the supervision of 
-    <br> 
-    <a href= "http://www.iitkgp.ac.in/department/EC/faculty/ec-sharba#resp-tab1" target="_blank"> Prof. Sharba Bandyopadhyay </a> of E&ECE department, IIT Kharagpur. I am registered in the Advanced Technology Development Center (ATDC) of IIT Kharagpur.
-  </p>
-    
-  <p> <b> Research topics: </b>
-    <br>
-    <br>
-    <p1>
-    <u> Spectral Feature selectivity in mouse adult auditory cortex </u>
-    <br>
-    Spectral contrast is an important feature of the auditory stimuli that helps in recognition of sound objects in different situation.
-    <br>
-    In the coding of complex and more naturalistic stimuli, the varying contrast characteristics of the stimuli are of much importance in maximizing the representation of relavant features and reducing redundancies 
-    <br>
-    in the stimulus space. In order to understand this spectral contrast selectivity shown by the auditory cortex, we probe the neural signals in response to stimuli containing variable spectral contrast.
-    </p1>
-    <br>
-    <br>
-    <p2>
-      <u> Theoretical approach to deviant selectivity </u>
-      <br>
-      Deviant selectivity is defined as the neural preference of rare stimuli (deviant) over a frequenct stimuli (standard). A macro-level manifestation of the deviant selectivity
-      <br>
-      gives rise to Mis-Match Negativity (MMN). We plan to see the parameters within the stimulus space and the neuronal level whose optimization can maximize the Mutual Information (MI) 
-      <br>
-      between an odd-ball stimulus and the neural response, thereby enhancing the encoding abilities of the neural circuit.
-    </p2>
-    <br>
-    <br>
-    <p3>
-  <u> Role of inhibitory neurons in long-scale adaptation in the auditory cortex </u>
-  <br>
-  Adaptation is one of the most characteristic features of the neural circuits, aimed at reducing the redundancies from the stimulus space. The neural circuits can exhibit multiple time scales of adaptations, and 
-  <br>
-  the inhibitory-neuron subtypes play an important modulatory role in shaping these responses. We wish to study these differences within the inhibitory subtype and hypothesize a possible mechanism which 
-  <br>
-  can lead to such long-scale adaptations within the neural responses in the auditory cortex.
-    </p3>
-  </p>
-  <p> <b> Education: </b> 
-    <br>
-    <br>
-    2013-2018            Bachelor's and Master's (Dual degree), Biotechnology, IIT Kharagpur (department rank 3)
-  </p>
-  <p> <b> Publication </b>
-    <br>
-    <ul>
-    <li>  
-    Mehra M, Mukesh A, Bandyopadhyay S. (2021) Earliest experience of a relatively rare sound but not a frequent sound causes long term changes in the adult auditory cortex,
-      <br>
-      Journal of Neuroscience, <a href= "https://www.jneurosci.org/content/42/8/1454" target="_blank"> link </a>
-       </li>
-    <li> Mehra M*, Mukesh A*, Bandyopadhyay S. (2021) Separate functional subnetworks of excitatory neurons show preference to periodic and random structures.
-      <br>
-      Journal of Neuroscience, <a href="https://www.jneurosci.org/content/42/15/3165" target="_blank"> link </a> (*equal contrinution)
-       </li>
-    <li> Mukesh A, Mehra M, Bandyopadhyay S. Spectral Contrast selectivity in Excitatory and Inhibitory neurons of mouse auditory cortex (Manuscript in prepration) </li> 
-  </ul>
-  </p>
-  <p> <b> Conference Presentations </b>
-    <br>
-    <ul>
-      <li> 
-        Mukesh, A., Muneshwar and Bandyopadhyay, S. Model of developing auditory cortex shows low probability stimuli as drivers of cortical organisation, Association for Research in Otolaryngology, 2018, San Diego, CA.
-        <a href= "https://drive.google.com/file/d/15Hnf8URAC7FCy3faAfV7AjhrSNw8i4pe/view?usp=sharing" target="_blank"> link </a>
-      </li>
-      <li> 
-        Mukherjee, A., Patel, P., Mukesh, A., Muneshwar and Bandyopadhyay, S. Spectral shape based adaptation unravels mechanisms underlying spectral contrast coding in the mouse auditory cortex (ACX), Society for Neuroscience, 2018, San Diego, CA.
-        <a href= "https://drive.google.com/file/d/1rKKTu2B2XAefQrdIfFacIOsbmiXnOGI0/view?usp=sharing" target="_blank"> link </a> 
-      </li>
-      <li> 
-        Muneshwar, Parashar, M., Srivastava, H.K., Mukesh, A. and Bandyopadhyay, S. Role of inhibitory interneurons in long time scale adaptation based changes in coding of sound sequences in the mouse auditory cortex (ACX), Society for Neuroscience, 2018, San Diego, CA.
-        <a href= "https://drive.google.com/file/d/1j4je5lUiVnujWieClRP8inIg_PBWF7_e/view?usp=sharing" target="_blank"> link </a>
-        </li>
-      <li> 
-        Mukesh, A., Muneshwar and Bandyopadhyay, S. Deviant selectivity in auditory cortical neurons for stimuli with varying contrast, Association for Research in Otolaryngology, 2022, San Jose, CA.
-        <a href= "https://drive.google.com/file/d/13J_IzhpJFJitGKeUBQBiZsf8-v-9ajWF/view?usp=sharing" target="_blank"> link </a> 
-      </li>
-      <li>
-        Muneshwar*, Mukesh, A*. and Bandyopadhyay, S. Separate functional subnetworks encode regularity and irregularity of sound sequences within auditory cortex. Society for Neuroscience, 2022, San Diego, CA. (* equal contribution)
-      </li>
-                                                                                                                               
-                                                                                                                               
-    </ul>
-  </p>
-  <p> <b> Courses taken </b> 
-    <br>
-    <ul>
-      <li> Estimation of signals and systems </li>
-      <li> Pattern Recognition and Image Understanding </li>
-      <li> Introduction to cognitive information processing </li>
-      <li> English for technical writing </li>
-    </ul>
-  <p> <b> Work progress </b> 
-    <br>
-    <ul>
-      <li> Established a theoretical binary framework to show that deviant selectivity is preferred to maximise imformation exchange </li>
-      <li> Constructed a rough binary and isofrequency column-based model to  demonstrate deviant selectivity in auditory cortex. </li>   
-      <li> Investigated the role of inhibitory neruons in the encoding of temporal stimulus patterns in the auditory cortex </li>                                                                                                                         
-      <li> Found evidence of contrast selectivity in the neurons of auditory cortex and investigated the role of inhibitory neurons in it. </li>
-     </ul>
-      <br>
-  </p> 
-  <img src="mhl.PNG">
-  <img src="mhl2.PNG">
+    <h1 class="title">Adarsh Mukesh</h1>
+
+    <!-- Tabs -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'Research')">Research</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Home" class="tabcontent">
+        <div class="container">
+            <div class="profile-picture">
+                <img src="adarsh.jpg" alt="Adarsh Mukesh's face">
+            </div>
+            <div class="content">
+                <p>
+                    I am a postdoctoral fellow at the <a href="https://engineering.purdue.edu/HeinzLab"> Auditory Neurophysiology and Modeling Lab at Purdue University in Lafayette, Indiana. My mentor is Prof. Michael Heinz. I received my Ph.D. in computational and systems neuroscience from IIT Kharagpur. My advisor was Prof. <a href="https://informationprocessinglab.weebly.com/">Sharba Bandyopadhaya</a>.
+                </p>
+                <p>
+                    Here is my <a href = "https://drive.google.com/file/d/1-Wwale1ntqtDkHMyxEh-2dH3aQ9M2Pe_/view?usp=sharing" target="_blank"">CV</a>.
+                </p>
+                <p><b>Research Area:</b> Computational Neuroscience; Auditory Neuroscience.</p>
+                    <p>Email: amukesh at purdue.edu<br>
+    Office: LYLE-3065, 715 Clinic Dr.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="Research" class="tabcontent">
+        <div class="container">
+            <div class="profile-picture">
+                <img src="adarsh.jpg" alt="Adarsh Mukesh's face">
+            </div>
+            <div class="content">
+                <h3>Preprint</h3>
+                <ul>
+                    <li><b><a href="https://arxiv.org/abs/2406.12191">Quantum K-Invariants via Quot schemes I</a></b><br> (with Ming Zhang)</li>
+                    <li><b><a href="https://arxiv.org/abs/2410.23486">Quantum K-Invariants via Quot schemes II</a></b><br> (with Ming Zhang)</li>
+                </ul>
+                <h3>Papers</h3>
+                <ul>
+                <li><b><a href="https://arxiv.org/abs/2207.01675">Euler characteristics of tautological bundles over Quot schemes of curves.</a></b><br> <i>Advances in Mathematics 418 (2023)</i> (with Dragos Oprea)</li>
+                <li><b><a href="https://arxiv.org/abs/2106.11356">The virtual intersection theory of isotropic Quot Schemes.</a></b><br> <i>Journal of Geometry and Physics 198 (2024)</i></li>
+                <li><b><a href="https://arxiv.org/abs/2211.07996">Cores of partitions in rectangles.</a></b><br> <i>Electronic Journal of Combinatorics 31(1) (2024)</i> (with Arvind Ayyer)</li>
+                <li><b><a href="https://arxiv.org/abs/2210.12323#">Bergman-Einstein metrics on two-dimensional Stein spaces.</a></b><br> <i>To appear in Michigan Mathematical Journal</i> (with Soumya Ganguly)</li>
+                <li><b><a href="https://arxiv.org/abs/1911.03135v3">The size of t-cores and hook lengths of random cells in random partitions.</a></b><br> <i>The Annals of Applied Probability 33 (2022)</i> (with Arvind Ayyer)</li>
+                <li><b><a href="https://www.emis.de/journals/SLC/wpapers/FPSAC2020/87-Sinha.pdf">Random t-Cores and Hook Lengths in Random Partitions.</a></b><br> <i>Sém. Lothar. Combin. 84B (2020)</i> (with Arvind Ayyer)</li>
+                <li><b><a href="https://arxiv.org/abs/2106.12156">Driving chemical reactions with polariton condensates.</a></b><br> <i>Nature Communications 1645 (2022)</i> (with Sindhana Pannir-Sivajothi, Jorge A. Campos-Gonzalez-Angulo, Luis A. Martínez-Martínez, Joel Yuen-Zhou)</li>
+		<li><b><a href="https://escholarship.org/content/qt97v9q1s3/qt97v9q1s3.pdf">Numerical invariants of Quot schemes of curves .</a></b> <i>Ph.D. Thesis (2023)</i> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="Teaching" class="tabcontent">
+        <div class="container">
+            <div class="profile-picture">
+                <img src="Google_scholar_DP.jpg" alt="Shubham Sinha's face">
+            </div>
+            <div class="content">
+                <h3>Teaching</h3>
+                <ul>
+                    <li><a href="Complex_Analysis.html">Complex Analysis</a>: Fall 2024, ICTP</li>
+		<li>
+		Calculus 1 (Math 10A): Summer 2023, UC San Diego
+		</li>
+		<li>
+		Calculus 2 (Math 10B): Summer 2022, UC San Diego
+		</li>
+		<li>
+		 Calculus 2 (Math 10B): Summer 2021, UC San Diego
+</li>
+                </ul>
+                <h3>Mentoring Activity</h3>
+		    <ul>
+		<li>Olympiad: I was involved in training the Indian IMO (International Mathematical Olympiad) team during the years 2014-2017 and 2021.</li>
+		<li>Mentoring at UCSD: <a href="http://math.ucsd.edu/~rtgagant/rtgreading.html">RTG</a> graduate directed reading for undergraduates, Algebraic curves and Riemann surfaces, Spring 2021.</li>
+		<li>Mentoring at UCSD: <a href="http://math.ucsd.edu/~rtgagant/rtgreading.html">RTG</a> graduate directed reading for undergraduates, 27 lines on a cubic surface, Spring 2020.</li>
+		    </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="Talks" class="tabcontent">
+        <div class="container">
+            <div class="profile-picture">
+                <img src="Google_scholar_DP.jpg" alt="Shubham Sinha's face">
+            </div>
+            <div class="content">
+                <h3>Research Talk</h3>
+                <ul>
+                <li><b> <a href="https://memento.epfl.ch/event/gaag-seminar-k-theoretic-invariants-of-the-quot-sc/">GAAG seminar</a>, EPFL Lausanne</b> (2024) : K-theoretic invariants of the Quot scheme of curves.</li>
+                <li><b>  <a href="https://mathematik.univie.ac.at/forschung/seminare/seminar-algebra-and-number-theory/nachrichtenvolldarstellung-se/news/k-theoretic-invariants-of-the-quot-scheme-of-curves/?no_cache=1&cHash=44123b3e49ec841f7dcfdbbb0fff930b">Algebra and Number Theory</a> Seminar, University of Vienna</b> (2024) : K-theoretic invariants of the Quot scheme of curves.</li>
+                    <li><b>Moduli stacks and enumerative geometry (VBAC), Isaac Newton Institute, Cambridge</b> (2024) : Quantum K-invariants via Quot schemes. <a href="https://www.newton.ac.uk/seminar/43266/">video</a>,<a href="https://drive.google.com/file/d/1vdgYG7nlfk7IVzZ570LQ48auwPydqcSN/view"> slides</a>
+</li> 
+                <li><b>Virginia Tech Algebra Seminar</b> (2024) : Quantum K-invariants via Quot scheme.</li>
+                <li><b>Algebraic Geometry Seminar, IISER Pune</b> (2024) : Quantum K-invariants of Grassmannians via Quot scheme.</li>
+                <li><b>Algebraic Geometry Seminar, ICTP</b> (2023) : Quantum K-invariants of Grassmannians via Quot scheme.</li>
+                <li><b>Categorical methods in moduli theory, University of Pennsylvania</b> (2023) : Schur bundles over Quot schemes of P^1 (<a href="https://users.ictp.it/~ssinha1/UPenn_Short_talk.pdf">slides</a>).</li>
+                <li><b>Algebraic Geometry Seminar, ICTP</b> (2023) : Tautological bundles over Quot schemes on curves (<a href="https://users.ictp.it/~ssinha1/ICTP_talk_Jan2023.pdf">slides</a>).</li>
+                <li><b>Geometry & Topology Seminar, IISc Bangalore</b> (2023) : The virtual intersection theory of isotropic Quot schemes.</li>
+                <li><b>Virginia Tech Algebra Seminar</b> (2022) : Numerical invariants of Quot schemes on curves.</li>
+                <li><b>Western Algebraic Geometry Symposium (WAGS), UC Riverside</b> (2022) : Tautological bundles over Quot schemes of curves (poster).</li>
+                <li><b>University of Warwick, VBAC</b> (2022) : Tautological bundles over Quot schemes of curves (poster).</li>
+                <li><b>Richmond Geometry festival</b> (2022) : Tautological bundles over Quot schemes of curves (poster).</li>
+                <li><b>FPSAC 2020</b> : Random t-cores and hook lengths in random partitions (<a href="https://www.youtube.com/watch?v=c-Se8mpaz2c&t=571s">video</a>, <a href="https://drive.google.com/file/d/1PlA9lWQww-Ve5Z0ayJF7cLbTfS8RNCjD/view">slides</a>).</li>
+                <li><b>IMSc Algebraic Combinatorics Seminar</b> (2020) : Random t-cores and hook lengths in random partitions.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="Seminars" class="tabcontent">
+        <div class="container">
+            <div class="profile-picture">
+                <img src="Google_scholar_DP.jpg" alt="Shubham Sinha's face">
+            </div>
+            <div class="content">
+                <h3>Seminars</h3>
+                <ul>
+		<li><a href="https://aricolfi.github.io/MATHS/QuotSeminar2024.html">ICTP/SISSA Research Seminar on Quot schemes – Fall 2024</a></li>
+                <li><a href="https://sites.google.com/view/trinotriestino/home">TRINO</a>: A 3-fold seminar in Trieste (ICTP - SISSA - UniTS)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+
 </body>
 </html>
 
